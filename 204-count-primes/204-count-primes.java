@@ -9,7 +9,7 @@ class Solution {
         for(int i=2 ; i <n; i++){
             if(prime[i]== false) continue;
             count++; // i os a prime number
-            for(long j=1l*i;j <n; j = j+i){
+            for(long j=1l*i*i;j <n; j = j+i){
                 prime[(int)j]= false; // mark multiples of i as no-prime
                 
             }
